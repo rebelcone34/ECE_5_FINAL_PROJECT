@@ -8,8 +8,8 @@
           content="width=device-width, initial-scale=1.0">
 
     <!--
-        CHANGE THIS:
-        Replace the text below with your team/project name.
+        CHANGE THIS TO YOUR TEAM/PROJECT NAME.
+        This appears in the browser tab.
     -->
     <title>ECE 5 Final Project</title>
 
@@ -19,39 +19,29 @@
 
 <body>
 
-
-<!-- =========================================================
-     NAVIGATION BAR
-========================================================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
 <header>
 
     <nav class="navbar">
 
         <!--
-            ADD PROJECT/TEAM NAME HERE.
+            ADD YOUR TEAM NAME HERE.
 
             Example:
-            <h2>Team 5 - Line Following Robot</h2>
+            <a class="logo" href="#top">TEAM VOLTAGE</a>
         -->
-        <h2></h2>
+        <a class="logo" href="#top"></a>
 
 
         <div class="nav-links">
 
-            <a href="#team-info">Team</a>
-
-            <a href="#robot-build">Robot Build</a>
-
-            <a href="#final-robot">Final Robot</a>
-
+            <a href="#build">Build</a>
             <a href="#pid">PID</a>
-
             <a href="#results">Results</a>
-
-            <a href="#media">Media</a>
-
-            <a href="#improvements">Improvements</a>
+            <a href="#team">Team</a>
 
         </div>
 
@@ -61,108 +51,318 @@
 
 
 
-<main>
+<main id="top">
 
 
-<!-- =========================================================
-     HERO / TITLE SECTION
-========================================================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <section class="hero">
 
-    <!--
-        ADD PROJECT TITLE HERE.
-
-        Example:
-        <h1>Autonomous Line-Following Robot</h1>
-    -->
-    <h1></h1>
-
-
-    <p class="project-label">
-        ECE 5 Final Project
+    <p class="eyebrow">
+        ECE 5 · FINAL PROJECT
     </p>
 
 
     <!--
-        ADD A SHORT 1-2 SENTENCE DESCRIPTION OF THE PROJECT.
+        ADD PROJECT NAME HERE.
 
-        Example structure:
+        Example:
+        <h1>Autonomous Line Following Robot</h1>
+    -->
+    <h1></h1>
+
+
+    <!--
+        ADD A SHORT 1-2 SENTENCE DESCRIPTION.
+
+        Keep this concise since this is the large
+        introduction at the top of the page.
+
+        Example:
 
         <p class="hero-description">
-            Our team designed and tested an autonomous robot
-            for the ECE 5 final competition.
+            A competition robot designed and built by our
+            team to autonomously navigate multiple tracks
+            using sensor feedback and PID control.
+        </p>
+    -->
+    <p class="hero-description"></p>
+
+
+    <!--
+        ADD TEAM NUMBER, TEAM NAME, AND MEMBER NAMES.
+
+        Example:
+
+        <p class="team-line">
+            Team 4 · Voltage Racing
+        </p>
+
+        <p class="member-line">
+            Alex · John · Sarah
         </p>
     -->
 
-    <p class="hero-description"></p>
+    <p class="team-line"></p>
+
+    <p class="member-line"></p>
 
 </section>
 
 
 
-<!-- =========================================================
-     1. TEAM INFORMATION
-     Requirement:
-     Team Number / Team Name / Team Member Names
-========================================================= -->
+<!-- =====================================================
+     FEATURED FINAL ROBOT
+===================================================== -->
 
-<section id="team-info">
+<section id="final-robot"
+         class="section">
 
-    <h2>Team Information</h2>
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            FINAL DESIGN
+        </p>
+
+        <h2>Competition Robot</h2>
+
+    </div>
 
 
-    <div class="info-grid">
+    <div class="featured-card">
 
 
-        <div class="card">
+        <!--
+            ADD YOUR MAIN ANNOTATED ROBOT PHOTO HERE.
 
-            <h3>Team Number</h3>
+            1. Add arrows and labels to your robot photo
+               using PowerPoint, Canva, Paint, etc.
+
+            2. Export the annotated image as JPG or PNG.
+
+            3. Upload it to your GitHub repository.
+
+            Suggested folder:
+
+                images/robot/
+
+            4. Uncomment the image below and change
+               the filename if necessary.
+
+
+            <img
+                src="images/robot/final-robot-annotated.jpg"
+                alt="Annotated final competition robot"
+            >
+        -->
+
+
+        <div class="card-content">
+
+            <p class="card-label">
+                FINAL COMPETITION CONFIGURATION
+            </p>
+
 
             <!--
-                ADD TEAM NUMBER HERE.
+                ADD A SHORT EXPLANATION OF THE FINAL ROBOT.
 
-                Example:
-                <p>Team 7</p>
+                Mention important features shown in the
+                annotated image.
             -->
+
+            <p></p>
 
         </div>
 
+    </div>
 
-        <div class="card">
+</section>
 
-            <h3>Team Name</h3>
+
+
+<!-- =====================================================
+     ROBOT BUILD
+===================================================== -->
+
+<section id="build"
+         class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            DEVELOPMENT
+        </p>
+
+        <h2>Robot Building Process</h2>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <!-- ======================
+             PROTOTYPING
+        ======================= -->
+
+        <article class="project-card">
 
             <!--
-                ADD TEAM NAME HERE.
+                OPTIONAL PROTOTYPE IMAGE.
 
-                Example:
-                <p>Voltage Racers</p>
+                Upload image to:
+                images/robot/
+
+                Then add:
+
+                <img
+                    src="images/robot/prototype.jpg"
+                    alt="Robot prototype"
+                >
             -->
 
-        </div>
+
+            <div class="card-content">
+
+                <h3>Prototyping</h3>
+
+                <!--
+                    ADD INFORMATION FROM YOUR EARLIER
+                    CHALLENGE 1-2 SUBMISSIONS.
+
+                    Explain:
+                    - Initial robot design
+                    - Breadboard testing
+                    - Sensor tests
+                    - Early problems
+                    - Changes your team made
+                -->
+
+                <p></p>
+
+            </div>
+
+        </article>
 
 
-        <div class="card">
 
-            <h3>Team Members</h3>
+        <!-- ======================
+             PARTS
+        ======================= -->
+
+        <article class="project-card">
 
             <!--
-                ADD ALL TEAM MEMBER NAMES HERE.
+                OPTIONAL PARTS PHOTO:
 
-                You can use:
-
-                <ul>
-                    <li>Name 1</li>
-                    <li>Name 2</li>
-                    <li>Name 3</li>
-                </ul>
-
-                Keep this as a TEAM website rather than
-                implying the project belongs to one person.
+                <img
+                    src="images/robot/parts.jpg"
+                    alt="Robot components"
+                >
             -->
 
-        </div>
+
+            <div class="card-content">
+
+                <h3>Parts & Components</h3>
+
+
+                <!--
+                    ADD YOUR COMPONENT LIST.
+
+                    Example:
+
+                    <ul class="clean-list">
+                        <li>Arduino Uno</li>
+                        <li>Motor Driver</li>
+                        <li>DC Motors</li>
+                        <li>Line Sensors</li>
+                        <li>Battery</li>
+                    </ul>
+                -->
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ======================
+             ASSEMBLY
+        ======================= -->
+
+        <article class="project-card">
+
+            <!--
+                OPTIONAL ASSEMBLY PHOTO:
+
+                <img
+                    src="images/robot/assembly.jpg"
+                    alt="Robot assembly process"
+                >
+            -->
+
+
+            <div class="card-content">
+
+                <h3>Assembly</h3>
+
+
+                <!--
+                    DESCRIBE HOW THE FINAL ROBOT
+                    WAS ASSEMBLED.
+
+                    Consider discussing:
+                    - Motor mounting
+                    - Sensor position
+                    - Wiring
+                    - Chassis
+                    - Mechanical changes
+                -->
+
+                <p></p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ======================
+             FINAL CHANGES
+        ======================= -->
+
+        <article class="project-card">
+
+
+            <!--
+                OPTIONAL IMAGE OF FINAL CHANGES.
+
+                <img
+                    src="images/robot/final-build.jpg"
+                    alt="Final robot modifications"
+                >
+            -->
+
+
+            <div class="card-content">
+
+                <h3>Final Build Changes</h3>
+
+
+                <!--
+                    ADD ANY SIGNIFICANT CHANGES MADE
+                    BEFORE COMPETITION DAY.
+                -->
+
+                <p></p>
+
+            </div>
+
+        </article>
 
 
     </div>
@@ -171,407 +371,238 @@
 
 
 
-<!-- =========================================================
-     2. ROBOT BUILDING SECTION
+<!-- =====================================================
+     PID CONTROL
+===================================================== -->
 
-     Requirement:
-     Robot Building Section from previous Ch. 1-2 submissions
-     - Prototyping
-     - Parts
-     - Assembly
-========================================================= -->
+<section id="pid"
+         class="section">
 
-<section id="robot-build">
+    <div class="section-heading">
 
-    <h2>Robot Building Process</h2>
+        <p class="eyebrow">
+            CONTROL SYSTEM
+        </p>
+
+        <h2>PID Control</h2>
+
+    </div>
 
 
-    <!-- =========================
-         PROTOTYPING
-    ========================== -->
+    <div class="text-feature">
 
-    <article class="content-block">
+        <h3>How Our PID Controller Worked</h3>
 
-        <h3>Prototyping</h3>
 
         <!--
-            ADD YOUR PROTOTYPING DESCRIPTION HERE.
-
-            Explain things such as:
-            - Initial design ideas
-            - Breadboard testing
-            - Early sensor tests
-            - Early chassis design
-            - Problems found during prototyping
-
-            Example HTML:
-
-            <p>
-                Your paragraph here.
-            </p>
-        -->
-
-    </article>
-
-
-
-    <!-- =========================
-         PARTS
-    ========================== -->
-
-    <article class="content-block">
-
-        <h3>Parts and Components</h3>
-
-        <!--
-            ADD YOUR ROBOT'S MAIN COMPONENTS HERE.
-
-            Suggested format:
-
-            <ul>
-                <li>Arduino / microcontroller</li>
-                <li>Motors</li>
-                <li>Motor driver</li>
-                <li>Sensors</li>
-                <li>Battery</li>
-                <li>Chassis components</li>
-            </ul>
-
-            Replace those examples with the actual components
-            your team used.
-        -->
-
-    </article>
-
-
-
-    <!-- =========================
-         ASSEMBLY
-    ========================== -->
-
-    <article class="content-block">
-
-        <h3>Assembly</h3>
-
-        <!--
-            ADD YOUR ASSEMBLY DESCRIPTION HERE.
+            EXPLAIN PID CONTROL HERE.
 
             Explain:
-            - How the robot was assembled
-            - Sensor placement
-            - Motor placement
-            - Wiring
-            - Mechanical changes
+            - P: reacts to current error
+            - I: reacts to accumulated error
+            - D: reacts to rate of change
 
-            You can also add build photos with:
-
-            <img
-                src="images/robot/build-photo.jpg"
-                alt="Robot during assembly"
-                class="project-image"
-            >
-
-            Upload the image into:
-            images/robot/
+            Then relate those ideas specifically
+            to your robot.
         -->
 
-    </article>
+        <p></p>
 
-</section>
-
-
-
-<!-- =========================================================
-     3. FINAL ROBOT
-
-     Requirement:
-     Updated photos of final competition robot
-     WITH annotations / arrows identifying robot features
-========================================================= -->
-
-<section id="final-robot">
-
-    <h2>Final Competition Robot</h2>
-
-
-    <!--
-        ADD YOUR FINAL ROBOT PHOTO HERE.
-
-        IMPORTANT:
-        The rubric asks for arrows and words identifying
-        robot features.
-
-        The easiest method is:
-
-        1. Open the robot photo in PowerPoint, Canva,
-           Paint, Photoshop, etc.
-        2. Add arrows and labels.
-        3. Export the annotated image as PNG or JPG.
-        4. Upload it to:
-           images/robot/
-        5. Add it below using:
-
-        <figure>
-
-            <img
-                src="images/robot/final-robot-annotated.jpg"
-                alt="Annotated final competition robot"
-                class="project-image"
-            >
-
-            <figcaption>
-                Final competition robot with major components labeled.
-            </figcaption>
-
-        </figure>
-    -->
-
-
-    <!--
-        ADD ANY ADDITIONAL FINAL ROBOT PHOTOS BELOW
-        using the same <figure> structure if needed.
-    -->
-
-</section>
+    </div>
 
 
 
-<!-- =========================================================
-     4. PID CONTROL
-
-     Requirement:
-     - Explain PID control
-     - What PID values did you choose and why?
-     - How did you adjust speed & PID for different tracks?
-========================================================= -->
-
-<section id="pid">
-
-    <h2>PID Control</h2>
+    <div class="pid-grid">
 
 
-    <!-- =========================
-         PID EXPLANATION
-    ========================== -->
+        <div class="pid-card">
 
-    <article class="content-block">
+            <span>P</span>
 
-        <h3>How PID Control Works</h3>
-
-        <!--
-            ADD YOUR PID EXPLANATION HERE.
-
-            Explain what:
-            - Proportional (P)
-            - Integral (I)
-            - Derivative (D)
-
-            contributed to your robot.
-
-            Use:
-
-            <p>
-                Your explanation here.
-            </p>
-        -->
-
-    </article>
+            <h3>Kp</h3>
 
 
+            <!--
+                ADD YOUR Kp VALUE.
 
-    <!-- =========================
-         PID VALUES
-    ========================== -->
+                Example:
+                <strong>0.50</strong>
+            -->
 
-    <article class="content-block">
-
-        <h3>Selected PID Values</h3>
-
-
-        <div class="table-wrapper">
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                        <th>Reason</th>
-                    </tr>
-
-                </thead>
+            <strong></strong>
 
 
-                <tbody>
+            <!--
+                EXPLAIN WHY THIS VALUE WAS CHOSEN.
+            -->
 
-                    <tr>
-                        <td>Kp</td>
-
-                        <!--
-                            ADD Kp VALUE HERE.
-                        -->
-                        <td></td>
-
-                        <!--
-                            EXPLAIN WHY YOUR TEAM CHOSE THIS VALUE.
-                        -->
-                        <td></td>
-                    </tr>
-
-
-                    <tr>
-                        <td>Ki</td>
-
-                        <!-- ADD Ki VALUE -->
-                        <td></td>
-
-                        <!-- EXPLAIN WHY -->
-                        <td></td>
-                    </tr>
-
-
-                    <tr>
-                        <td>Kd</td>
-
-                        <!-- ADD Kd VALUE -->
-                        <td></td>
-
-                        <!-- EXPLAIN WHY -->
-                        <td></td>
-                    </tr>
-
-                </tbody>
-
-            </table>
+            <p></p>
 
         </div>
 
-    </article>
 
 
+        <div class="pid-card">
 
-    <!-- =========================
-         DIFFERENT TRACK SETTINGS
-    ========================== -->
+            <span>I</span>
 
-    <article class="content-block">
-
-        <h3>Speed and PID Adjustments for Each Track</h3>
-
-        <!--
-            EXPLAIN HOW YOUR TEAM CHANGED:
-            - Robot speed
-            - Kp
-            - Ki
-            - Kd
-
-            for each competition track.
-
-            You can write paragraphs OR use the table below.
-        -->
+            <h3>Ki</h3>
 
 
-        <div class="table-wrapper">
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Track</th>
-                        <th>Speed</th>
-                        <th>Kp</th>
-                        <th>Ki</th>
-                        <th>Kd</th>
-                        <th>Reason for Changes</th>
-                    </tr>
-
-                </thead>
+            <!-- ADD Ki VALUE -->
+            <strong></strong>
 
 
-                <tbody>
-
-                    <tr>
-
-                        <td>Drag Race</td>
-
-                        <!-- ADD VALUES BELOW -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                        <!--
-                            EXPLAIN WHY THESE SETTINGS
-                            WERE USED FOR THE DRAG RACE.
-                        -->
-                        <td></td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td>Frequency Sweep</td>
-
-                        <!-- ADD VALUES BELOW -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                        <!-- EXPLAIN SETTINGS -->
-                        <td></td>
-
-                    </tr>
-
-
-                    <tr>
-
-                        <td>Loop</td>
-
-                        <!-- ADD VALUES BELOW -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                        <!-- EXPLAIN SETTINGS -->
-                        <td></td>
-
-                    </tr>
-
-                </tbody>
-
-            </table>
+            <!-- EXPLAIN WHY -->
+            <p></p>
 
         </div>
 
-    </article>
+
+
+        <div class="pid-card">
+
+            <span>D</span>
+
+            <h3>Kd</h3>
+
+
+            <!-- ADD Kd VALUE -->
+            <strong></strong>
+
+
+            <!-- EXPLAIN WHY -->
+            <p></p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ======================
+         TRACK SETTINGS
+    ======================= -->
+
+    <div class="subsection">
+
+        <p class="eyebrow">
+            TRACK TUNING
+        </p>
+
+        <h3>Speed & PID Adjustments</h3>
+
+
+        <div class="track-grid">
+
+
+            <article class="track-card">
+
+                <p class="number">
+                    01
+                </p>
+
+                <h4>Drag Race</h4>
+
+
+                <!--
+                    ADD:
+                    Speed:
+                    Kp:
+                    Ki:
+                    Kd:
+
+                    Then explain why your team chose
+                    these values for the drag race.
+                -->
+
+                <p></p>
+
+            </article>
+
+
+
+            <article class="track-card">
+
+                <p class="number">
+                    02
+                </p>
+
+                <h4>Frequency Sweep</h4>
+
+
+                <!--
+                    ADD:
+                    Speed:
+                    Kp:
+                    Ki:
+                    Kd:
+
+                    Explain why.
+                -->
+
+                <p></p>
+
+            </article>
+
+
+
+            <article class="track-card">
+
+                <p class="number">
+                    03
+                </p>
+
+                <h4>Loop</h4>
+
+
+                <!--
+                    ADD:
+                    Speed:
+                    Kp:
+                    Ki:
+                    Kd:
+
+                    Explain why.
+                -->
+
+                <p></p>
+
+            </article>
+
+
+        </div>
+
+    </div>
 
 </section>
 
 
 
-<!-- =========================================================
-     5. OPTIONAL CODE MODIFICATIONS
-========================================================= -->
+<!-- =====================================================
+     OPTIONAL CODE CHANGES
+===================================================== -->
 
-<section id="code">
+<section id="code"
+         class="section">
 
-    <h2>Code Modifications</h2>
+    <div class="section-heading">
 
-    <p class="optional-label">
-        Optional
-    </p>
+        <p class="eyebrow">
+            OPTIONAL
+        </p>
+
+        <h2>Code Modifications</h2>
+
+    </div>
 
 
     <!--
-        THIS SECTION IS OPTIONAL ACCORDING TO THE RUBRIC.
+        THIS SECTION IS OPTIONAL.
 
-        If your team made important modifications to the
-        provided code, describe them here.
+        If your team modified the provided robot code,
+        explain those changes here.
 
         Example:
 
@@ -579,173 +610,153 @@
             Our team modified...
         </p>
 
-        To display code:
+
+        You can show code using:
 
         <pre><code>
-        // paste code here
+        // code goes here
         </code></pre>
 
-        If you do NOT want this section, you can delete
-        this entire <section id="code">...</section>.
+
+        If you did NOT make meaningful code modifications,
+        you can delete this entire section.
     -->
 
 </section>
 
 
 
-<!-- =========================================================
-     6. PROJECT POSTER
+<!-- =====================================================
+     COMPETITION RESULTS
+===================================================== -->
 
-     Requirement:
-     Add poster submitted in early Week 10.
-========================================================= -->
+<section id="results"
+         class="section">
 
-<section id="poster">
+    <div class="section-heading">
 
-    <h2>Project Poster</h2>
+        <p class="eyebrow">
+            COMPETITION DAY
+        </p>
 
+        <h2>Competition Results</h2>
 
-    <!--
-        ADD YOUR FINAL POSTER HERE.
+    </div>
 
-        First upload the poster image into:
 
-        images/poster/
+    <div class="results-grid">
 
-        Then use:
 
-        <img
-            src="images/poster/final-poster.png"
-            alt="ECE 5 final project poster"
-            class="poster-image"
-        >
+        <!-- DRAG RACE -->
 
-        If your poster is currently a PDF, you can either:
-        - export it as PNG/JPG for easier viewing, OR
-        - link to the PDF.
-    -->
+        <article class="result-card">
 
-</section>
+            <p class="number">
+                01
+            </p>
 
+            <h3>Drag Race</h3>
 
 
-<!-- =========================================================
-     7. COMPETITION RESULTS
+            <div class="result-value">
 
-     Requirement:
-     Drag Race:
-       - Time
-       - Rank
+                <!-- ADD DRAG RACE TIME -->
+                <span></span>
 
-     Frequency Sweep:
-       - Distance
-       - Time
-       - Rank
+                <small>Time</small>
 
-     Loop:
-       - Number of loops
-       - Rank
-========================================================= -->
+            </div>
 
-<section id="results">
 
-    <h2>Competition Results</h2>
+            <div class="result-value">
 
+                <!-- ADD RANK -->
+                <span></span>
 
-    <div class="table-wrapper">
+                <small>Rank</small>
 
-        <table class="results-table">
+            </div>
 
-            <thead>
+        </article>
 
-                <tr>
 
-                    <th>Competition</th>
 
-                    <th>Time</th>
+        <!-- FREQUENCY SWEEP -->
 
-                    <th>Distance</th>
+        <article class="result-card">
 
-                    <th>Loops</th>
+            <p class="number">
+                02
+            </p>
 
-                    <th>Rank</th>
+            <h3>Frequency Sweep</h3>
 
-                </tr>
 
-            </thead>
+            <div class="result-value">
 
+                <!-- ADD DISTANCE -->
+                <span></span>
 
-            <tbody>
+                <small>Distance</small>
 
+            </div>
 
-                <!-- DRAG RACE -->
 
-                <tr>
+            <div class="result-value">
 
-                    <td>Drag Race</td>
+                <!-- ADD TIME -->
+                <span></span>
 
-                    <!-- ADD DRAG RACE TIME -->
-                    <td></td>
+                <small>Time</small>
 
-                    <!-- NOT REQUIRED FOR DRAG RACE -->
-                    <td>—</td>
+            </div>
 
-                    <!-- NOT REQUIRED -->
-                    <td>—</td>
 
-                    <!-- ADD DRAG RACE RANK -->
-                    <td></td>
+            <div class="result-value">
 
-                </tr>
+                <!-- ADD RANK -->
+                <span></span>
 
+                <small>Rank</small>
 
+            </div>
 
-                <!-- FREQUENCY SWEEP -->
+        </article>
 
-                <tr>
 
-                    <td>Frequency Sweep</td>
 
-                    <!-- ADD TIME -->
-                    <td></td>
+        <!-- LOOP -->
 
-                    <!-- ADD DISTANCE -->
-                    <td></td>
+        <article class="result-card">
 
-                    <!-- NOT REQUIRED -->
-                    <td>—</td>
+            <p class="number">
+                03
+            </p>
 
-                    <!-- ADD RANK -->
-                    <td></td>
+            <h3>Loop</h3>
 
-                </tr>
 
+            <div class="result-value">
 
+                <!-- ADD NUMBER OF COMPLETED LOOPS -->
+                <span></span>
 
-                <!-- LOOP TRACK -->
+                <small>Loops</small>
 
-                <tr>
+            </div>
 
-                    <td>Loop</td>
 
-                    <!-- NOT REQUIRED BY RUBRIC -->
-                    <td>—</td>
+            <div class="result-value">
 
-                    <!-- NOT REQUIRED -->
-                    <td>—</td>
+                <!-- ADD RANK -->
+                <span></span>
 
-                    <!-- ADD NUMBER OF LOOPS -->
-                    <td></td>
+                <small>Rank</small>
 
-                    <!-- ADD RANK -->
-                    <td></td>
+            </div>
 
-                </tr>
+        </article>
 
-
-            </tbody>
-
-        </table>
 
     </div>
 
@@ -753,188 +764,258 @@
 
 
 
-<!-- =========================================================
-     8. COMPETITION VIDEO
+<!-- =====================================================
+     COMPETITION VIDEO
+===================================================== -->
 
-     Requirement:
-     At least one video showing robot competing during
-     competition day.
-========================================================= -->
+<section id="video"
+         class="section">
 
-<section id="media">
+    <div class="section-heading">
 
-    <h2>Competition Video</h2>
-
-
-    <!--
-        OPTION 1 — HOST MP4 FILE IN YOUR REPOSITORY
-
-        Put the video inside:
-
-        videos/
-
-        Then uncomment:
-
-        <video
-            controls
-            class="competition-video"
-        >
-
-            <source
-                src="videos/competition-run.mp4"
-                type="video/mp4"
-            >
-
-            Your browser does not support video.
-
-        </video>
-
-
-        WARNING:
-        GitHub repositories are not ideal for very large videos.
-
-        If the file is large, uploading it to YouTube and
-        embedding the YouTube video may be better.
-    -->
-
-
-    <!--
-        OPTION 2 — YOUTUBE
-
-        Upload your competition video to YouTube.
-
-        Then YouTube:
-        Share -> Embed
-
-        Copy the iframe code and paste it here.
-
-        Example structure:
-
-        <iframe
-            class="youtube-video"
-            src="YOUR_EMBED_LINK"
-            title="Competition run"
-            allowfullscreen>
-        </iframe>
-    -->
-
-</section>
-
-
-
-<!-- =========================================================
-     9. TEAM PICTURE
-
-     Requirement:
-     Team picture with EACH MEMBER from competition day.
-========================================================= -->
-
-<section id="team-photo">
-
-    <h2>Competition Day Team</h2>
-
-
-    <!--
-        ADD THE TEAM PHOTO HERE.
-
-        Upload it to:
-
-        images/team/
-
-        Example:
-
-        <figure>
-
-            <img
-                src="images/team/team-photo.jpg"
-                alt="Team members on competition day"
-                class="project-image"
-            >
-
-            <figcaption>
-                Our team on competition day.
-            </figcaption>
-
-        </figure>
-
-        Make sure EVERY required team member appears
-        in the photograph.
-    -->
-
-</section>
-
-
-
-<!-- =========================================================
-     10. IMPROVEMENTS
-
-     Requirement:
-     4-6 sentences explaining:
-
-     - Improvements made during final week
-     - Improvements you wish you had made
-       OR would make with more time
-========================================================= -->
-
-<section id="improvements">
-
-    <h2>Final Improvements and Future Work</h2>
-
-
-    <!--
-        WRITE 4-6 SENTENCES HERE.
-
-        Include BOTH:
-
-        1. Improvements your team actually made during
-           the final week.
-
-        2. Improvements you would make if given more time.
-
-        Suggested structure:
-
-        <p>
-            Sentence 1...
-            Sentence 2...
-            Sentence 3...
-            Sentence 4...
-            Sentence 5...
+        <p class="eyebrow">
+            COMPETITION FOOTAGE
         </p>
 
-        Keep the wording in TEAM terms where appropriate:
-        "Our team changed..."
-        "We improved..."
+        <h2>Robot in Action</h2>
 
-        If discussing something specifically done by one
-        person, make that distinction clear.
+    </div>
+
+
+    <div class="video-container">
+
+
+        <!--
+            ADD AT LEAST ONE COMPETITION VIDEO.
+
+            OPTION 1 — YouTube
+
+            Upload the video to YouTube.
+
+            Click:
+            Share -> Embed
+
+            Paste the <iframe> here.
+
+
+            OPTION 2 — MP4
+
+            Upload the file into:
+
+            videos/
+
+            Then use:
+
+            <video controls>
+
+                <source
+                    src="videos/competition.mp4"
+                    type="video/mp4"
+                >
+
+            </video>
+
+            YouTube is usually better for large videos.
+        -->
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     POSTER
+===================================================== -->
+
+<section id="poster"
+         class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            PROJECT DOCUMENTATION
+        </p>
+
+        <h2>Final Poster</h2>
+
+    </div>
+
+
+    <!--
+        ADD YOUR WEEK 10 POSTER HERE.
+
+        Upload the image to:
+
+        images/poster/
+
+        Then add:
+
+        <img
+            src="images/poster/final-poster.png"
+            alt="ECE 5 final project poster"
+            class="poster"
+        >
     -->
 
 </section>
 
 
 
-<!-- =========================================================
+<!-- =====================================================
+     TEAM
+===================================================== -->
+
+<section id="team"
+         class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            THE TEAM
+        </p>
+
+        <h2>Built Together</h2>
+
+    </div>
+
+
+    <div class="team-layout">
+
+
+        <div class="team-photo">
+
+
+            <!--
+                ADD YOUR COMPETITION DAY TEAM PHOTO.
+
+                Every team member should appear.
+
+                Upload to:
+
+                images/team/
+
+                Then add:
+
+                <img
+                    src="images/team/team.jpg"
+                    alt="Team on competition day"
+                >
+            -->
+
+
+        </div>
+
+
+
+        <div class="team-description">
+
+
+            <!--
+                ADD TEAM NUMBER AND TEAM NAME.
+
+                Example:
+
+                <h3>Team 4 — Voltage Racing</h3>
+            -->
+
+            <h3></h3>
+
+
+            <!--
+                ADD TEAM MEMBER NAMES.
+
+                Example:
+
+                <ul class="clean-list">
+                    <li>Member Name</li>
+                    <li>Member Name</li>
+                    <li>Member Name</li>
+                </ul>
+            -->
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     IMPROVEMENTS
+===================================================== -->
+
+<section id="improvements"
+         class="section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            REFLECTION
+        </p>
+
+        <h2>Improvements & Future Work</h2>
+
+    </div>
+
+
+    <div class="text-feature">
+
+
+        <!--
+            WRITE 4-6 SENTENCES HERE.
+
+            REQUIRED BY THE ASSIGNMENT.
+
+            Discuss:
+
+            1. Improvements your TEAM made during
+               the last week.
+
+            2. What your team would improve if
+               given more time.
+
+            Suggested HTML:
+
+            <p>
+                Our team...
+            </p>
+        -->
+
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =====================================================
      FOOTER
-========================================================= -->
+===================================================== -->
 
 <footer>
 
     <!--
-        OPTIONAL:
-        You can add:
-        Course name
-        Quarter/year
-        Team name
+        ADD TEAM / COURSE INFORMATION.
 
         Example:
 
-        <p>ECE 5 — Summer 2026</p>
+        <p>
+            ECE 5 · Team 4 · Summer 2026
+        </p>
     -->
 
+    <p></p>
+
 </footer>
-
-
-</main>
 
 
 </body>
