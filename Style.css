@@ -1,35 +1,431 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+/* =========================================================
+   GLOBAL SETTINGS
+========================================================= */
+
+* {
+    box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+
+    color: #222;
+
+    background-color: #f5f6f8;
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
 header {
-    background-color: #222;
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background-color: #18202b;
+
     color: white;
-    padding: 20px;
+}
+
+
+.navbar {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.navbar h2 {
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 0.95rem;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    max-width: none;
+
+    min-height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #e6eaf0;
+
+    padding: 80px 20px;
+}
+
+
+.hero h1 {
+    margin: 0;
+
+    font-size: 4rem;
+}
+
+
+.project-label {
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-top: 15px;
+}
+
+
+.hero-description {
+    max-width: 700px;
+
+    margin-top: 20px;
+
+    font-size: 1.2rem;
+}
+
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+
+section h2 {
+    margin-top: 0;
+
+    font-size: 2.2rem;
+
+    border-bottom: 3px solid #222;
+
+    padding-bottom: 10px;
+}
+
+
+section h3 {
+    font-size: 1.4rem;
+}
+
+
+
+/* =========================================================
+   CONTENT BLOCKS
+========================================================= */
+
+.content-block {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+.project-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    height: auto;
+
+    margin: 30px auto;
+
+    border-radius: 8px;
+}
+
+
+.poster-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    height: auto;
+
+    margin: 30px auto;
+
+    box-shadow:
+        0 2px 12px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+figure {
+    margin: 30px 0;
+
     text-align: center;
 }
 
-nav a {
+
+figcaption {
+    margin-top: 10px;
+
+    color: #555;
+
+    font-size: 0.95rem;
+}
+
+
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.table-wrapper {
+    overflow-x: auto;
+
+    margin-top: 30px;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    text-align: left;
+}
+
+
+th {
+    background-color: #18202b;
+
     color: white;
-    margin: 15px;
-    text-decoration: none;
 }
 
-main {
+
+
+/* =========================================================
+   OPTIONAL LABEL
+========================================================= */
+
+.optional-label {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    background-color: #ddd;
+
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================================================
+   CODE DISPLAY
+========================================================= */
+
+pre {
+    overflow-x: auto;
+
+    padding: 20px;
+
+    background-color: #18202b;
+
+    color: white;
+
+    border-radius: 8px;
+}
+
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.competition-video {
+    display: block;
+
+    width: 100%;
+
     max-width: 900px;
-    margin: auto;
+
+    margin: 30px auto;
+}
+
+
+.youtube-video {
+    display: block;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    aspect-ratio: 16 / 9;
+
+    border: 0;
+
+    margin: 30px auto;
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    min-height: 100px;
+
     padding: 30px;
+
+    background-color: #18202b;
+
+    color: white;
+
+    text-align: center;
 }
 
-section {
-    margin-bottom: 60px;
-}
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+
+/* =========================================================
+   MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+
+    .nav-links a {
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+
+    section {
+        padding: 60px 20px;
+    }
+
 }
