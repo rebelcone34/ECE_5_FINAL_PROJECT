@@ -751,3 +751,7 @@ footer {
     }
 
 }
+
+body {
+    background-color: red !important;
+}
