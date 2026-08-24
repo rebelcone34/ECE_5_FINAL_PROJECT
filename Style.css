@@ -14,12 +14,8 @@ header {
 
 nav a {
     color: white;
+    margin: 15px;
     text-decoration: none;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -32,22 +28,8 @@ section {
     margin-bottom: 60px;
 }
 
-.project {
-    background-color: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
-}
-
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
 }
