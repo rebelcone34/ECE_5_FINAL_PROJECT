@@ -573,6 +573,15 @@ header {
     background: #111;
 }
 
+#test_1{
+    height: 600px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
 
 
 /* =====================================================
