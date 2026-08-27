@@ -575,11 +575,13 @@ header {
 
 #test_1{
     height: 600px;
-    width: auto;
+    width: 337.5px;       /* 9:16 ratio */
     max-width: 100%;
+
+    object-fit: cover;
+
     display: block;
     margin: 0 auto;
-    aspect-ratio: auto;
 
 }
 
