@@ -581,7 +581,8 @@ header {
     object-fit: cover;
 
     display: block;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: auto;
 
 }
 
