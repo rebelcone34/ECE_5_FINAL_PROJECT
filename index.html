@@ -11,7 +11,7 @@
         CHANGE THIS TO YOUR TEAM/PROJECT NAME.
         This appears in the browser tab.
     -->
-    <title>ECE 5 Final Project</title>
+    <title>NOT EVIL ENOUGH</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,6 +33,7 @@
             Example:
             <a class="logo" href="#top">TEAM VOLTAGE</a>
         -->
+        
         <a class="logo" href="#top"></a>
 
 
@@ -71,7 +72,9 @@
         Example:
         <h1>Autonomous Line Following Robot</h1>
     -->
-    <h1></h1>
+
+    
+    <h1>Line Following Robot</h1>
 
 
     <!--
@@ -88,7 +91,10 @@
             using sensor feedback and PID control.
         </p>
     -->
-    <p class="hero-description"></p>
+    <p class="hero-description">We built a robot designed to compete in 3 diffrent trials using a line for guidence. 
+        Using photoresistors we tuned our robots response to the line changing via PID Controls. By Tuning Said Controls and 
+    
+    </p>
 
 
     <!--
@@ -106,9 +112,9 @@
     -->
 
     <p class="team-line"></p>
-
+        Team 2 - Not Evil Enough
     <p class="member-line"></p>
-
+        Alex - Saul - Heath - Noah
 </section>
 
 
@@ -157,6 +163,10 @@
                 alt="Annotated final competition robot"
             >
         -->
+        <img
+                src="images/robot/final-robot-annotated.jpg"
+                alt="Annotated final competition robot"
+            >
 
 
         <div class="card-content">
@@ -173,7 +183,10 @@
                 annotated image.
             -->
 
-            <p></p>
+            <p> 
+                For Our Final Robot: We decided ensuring the photo resistors didn't get any external light was of high importance. 
+                We 3D printed a cover and used tape to prevent light from seeping under. 
+            </p>
 
         </div>
 
@@ -243,7 +256,12 @@
                     - Changes your team made
                 -->
 
-                <p></p>
+                <p>
+                    Initally we decided that having the photoresistor cover a wider area would be our best approach. 
+                    However we realized that besides the technical issues of wires crossing causing false postives. 
+                    It also prevented our robot from doing tight turns as it wasn't correcting Strongly enough for error.
+                    We decided to close int he photoresistors to fore out bot to folllow the line more closely to be able to complete right turns.
+                </p>
 
             </div>
 
@@ -276,15 +294,17 @@
                     ADD YOUR COMPONENT LIST.
 
                     Example:
-
+                    -->
                     <ul class="clean-list">
                         <li>Arduino Uno</li>
                         <li>Motor Driver</li>
                         <li>DC Motors</li>
-                        <li>Line Sensors</li>
+                        <li>Photoresistors</li>
                         <li>Battery</li>
+                        <li>3D Printed Shield</li>
+                        <li>Dreams</li>
                     </ul>
-                -->
+                
 
             </div>
 
@@ -325,7 +345,10 @@
                     - Mechanical changes
                 -->
 
-                <p></p>
+                <p>We got our chasis and super glued the motors to each end to secure them in place. 
+                We changed the chasis it self to fix our Esp-32 and motor driver. Along with that we
+                also extended the front of the chasis allwoing us to tape and glue in our shield and 
+                photoresistors. </p>
 
             </div>
 
@@ -408,7 +431,14 @@
             to your robot.
         -->
 
-        <p></p>
+        <p>
+            PID or Proportional Intergal and Derivative control
+            PID plays a curical role in how our robot reacts to missng the line.
+            To keep it simple PID is essntially methods of using error to correct our robots path.
+            Proportional reacts to our current error away from the line. 
+            Intergal accumlates the error over time to smoothly get back to line.
+            Derivative reacts to the rate of change of the error 
+        </p>
 
     </div>
 
@@ -431,14 +461,16 @@
                 <strong>0.50</strong>
             -->
 
-            <strong></strong>
+            <strong> 0.65 </strong>
 
 
             <!--
                 EXPLAIN WHY THIS VALUE WAS CHOSEN.
             -->
 
-            <p></p>
+            <p> We found that having high proportional at high speeds can lead to your 
+            robot going off the track very quickly. So through trial and error we found 
+            0.65 to be the good inbetween.</p>
 
         </div>
 
@@ -452,11 +484,13 @@
 
 
             <!-- ADD Ki VALUE -->
-            <strong></strong>
+            <strong>0.045</strong>
 
 
             <!-- EXPLAIN WHY -->
-            <p></p>
+            <p>We found that having integral made our turns alot smoother however shifting 
+            too high resutled in unintended affects. This value provided the right about of 
+            smooth turns along with reacting fast enough.</p>
 
         </div>
 
@@ -470,11 +504,13 @@
 
 
             <!-- ADD Kd VALUE -->
-            <strong></strong>
+            <strong>0.40</strong>
 
 
             <!-- EXPLAIN WHY -->
-            <p></p>
+            <p>Derivitive allowed us to react fast to error espically if it changes rapidly at 
+            the cost of our sensors shaking. For us we found increasing it to it current value allowed us to travl tight cornors 
+            alot easier.</p>
 
         </div>
 
@@ -663,7 +699,7 @@
             <div class="result-value">
 
                 <!-- ADD DRAG RACE TIME -->
-                <span></span>
+                <span>7.9 Seconds</span>
 
                 <small>Time</small>
 
@@ -673,7 +709,7 @@
             <div class="result-value">
 
                 <!-- ADD RANK -->
-                <span></span>
+                <span>Fourth</span>
 
                 <small>Rank</small>
 
@@ -697,7 +733,7 @@
             <div class="result-value">
 
                 <!-- ADD DISTANCE -->
-                <span></span>
+                <span>11.5</span>
 
                 <small>Distance</small>
 
@@ -707,7 +743,7 @@
             <div class="result-value">
 
                 <!-- ADD TIME -->
-                <span></span>
+                <span>18 sec</span>
 
                 <small>Time</small>
 
@@ -717,7 +753,7 @@
             <div class="result-value">
 
                 <!-- ADD RANK -->
-                <span></span>
+                <span>Fourth</span>
 
                 <small>Rank</small>
 
@@ -741,7 +777,7 @@
             <div class="result-value">
 
                 <!-- ADD NUMBER OF COMPLETED LOOPS -->
-                <span></span>
+                <span>24</span>
 
                 <small>Loops</small>
 
@@ -751,7 +787,7 @@
             <div class="result-value">
 
                 <!-- ADD RANK -->
-                <span></span>
+                <span>sixth</span>
 
                 <small>Rank</small>
 
@@ -866,6 +902,12 @@
             class="poster"
         >
     -->
+      <img
+            src="images/poster.jpg"
+            alt="ECE 5 final project poster"
+            class="poster"
+        >
+    
 
 </section>
 
@@ -928,7 +970,7 @@
                 <h3>Team 4 — Voltage Racing</h3>
             -->
 
-            <h3></h3>
+            <h3>Team 2 - Not Evil Enough</h3>
 
 
             <!--
@@ -1021,7 +1063,7 @@
         </p>
     -->
 
-    <p></p>
+    <p>ECE 5 - TEAM 2 - Summer 2026</p>
 
 </footer>
 
